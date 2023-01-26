@@ -10,8 +10,12 @@ apt install -y \
   man \
   tsu \
   git \
+  zip \
+  pigz \
   lua54 \
   rsync \
+  unrar \
+  p7zip \
   python \
   neovim \
   zoxide \
