@@ -2,29 +2,19 @@
 
 apt update && apt upgrade -y
 apt install -y \
-  fd \
+  `# shell` \
   zsh \
-  exa \
-  bat \
-  fzf \
-  man \
-  tsu \
-  git \
-  zip \
-  pigz \
-  lua54 \
-  rsync \
-  unrar \
-  p7zip \
-  python \
-  neovim \
-  zoxide \
-  luajit \
-  ripgrep \
-  openssh \
-  nodejs-lts \
-  termux-api \
-  termux-tools \
-  termux-services
+  `# 基础命令` \
+  fd exa bat man rsync zoxide \
+  `# 搜索工具` \
+  fzf ripgrep \
+  `# 解压缩工具` \
+  zip pigz unrar p7zip \
+  `# 开发工具` \
+  git neovim openssh \
+  `# 开发环境` \
+  lua54 luajit python nodejs-lts \
+  `# termux` \
+  tsu termux-api termux-tools termux-services
 
 source $(cd "$(dirname "$0")";pwd)/bootstrap.sh
